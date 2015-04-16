@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Bootstrap 3 Responsive Layout Example</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-</head>
-<body>
-<div class="container">
-        <h3>CALCULADORA</h3><br>
+{% extends 'plantilla.html' %}
+
+{% load static %}
+
+{% block section %}
+
+{% endblock section %}
+
+{% block maincontent %}
+    <br>
+        <h3>CALCULADORA iRF</h3><br>
         <ul class="list-group">
         <li class="list-group-item" data-toggle="collapse" data-target="#demo">DOBLE SINTONIA</li>
       	<div id="demo" class="collapse">
@@ -40,6 +38,9 @@
 				<input type="text" class="form-control" id="z2">
 				</div>
 			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label"><button type="button" class="btn">Calcular</button></label>
+			</div>
 			</form>
      		<br><br>
      	</div>
@@ -65,8 +66,10 @@
 				<input type="text" class="form-control" id="q">
 				</div>
 			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label"><button type="button" class="btn">Calcular</button></label>
+			</div>
 			</form>
-
      		<br><br>
      	</div>
      	<li class="list-group-item" data-toggle="collapse" data-target="#demo2">UNIDAD DE SINTONIA</li>
@@ -97,6 +100,9 @@
 				<input type="text" class="form-control" id="xa">
 				</div>
 			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label"><button type="button" class="btn">Calcular</button></label>
+			</div>
 			</form>
      		<br><br>
      	</div>
@@ -116,12 +122,11 @@
 				<input type="text" class="form-control" id="R">
 				</div>
 			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label"><button type="button" class="btn">Calcular</button></label>
+			</div>
 			</form>
      		<br><br>
      	</div>
      	</ul>
-    
-</div>
-</body>
-</html>  
-	
+{% endblock maincontent %}
