@@ -2,6 +2,15 @@ from django.http import HttpResponse
 from django.template import RequestContext, loader
 
 def index(request):
+
+    if 'dobleS' in request.POST:
+        print('')
+    if 'trampaD' in request.POST:
+        print('')
+    if 'unidadS' in request.POST:
+        print('')
+    if 'reactancia' in request.POST:
+        print('')
     template = loader.get_template('calculus/indexCalc.html')
     return HttpResponse(template.render())
 
